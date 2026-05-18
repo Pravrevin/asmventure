@@ -184,53 +184,117 @@ export interface LiveEvent {
   date: string;
   venue: string;
   category: string;
+  price: string;
 }
 
 export const liveEvents: LiveEvent[] = [
   {
     id: 1,
     title: 'FIT Patna Marathon 2026',
-    image:
-      'https://images.unsplash.com/photo-1517649763962-0c623066013b?w=800&q=80',
-    date: 'SUN 14 JUN',
+    image: 'https://images.unsplash.com/photo-1517649763962-0c623066013b?w=800&q=80',
+    date: 'Sun, 14 Jun, 6:00 AM',
     venue: 'Gandhi Maidan, Patna',
     category: 'Sports & Fitness',
+    price: '₹499 onwards',
   },
   {
     id: 2,
-    title: 'Bihar Couture Runway',
-    image:
-      'https://images.unsplash.com/photo-1469371670807-013ccf25f16a?w=800&q=80',
-    date: 'FRI 26 JUN',
+    title: 'Bihar Couture Runway 2026',
+    image: 'https://images.unsplash.com/photo-1469371670807-013ccf25f16a?w=800&q=80',
+    date: 'Fri, 26 Jun, 6:00 PM',
     venue: 'Hotel Maurya, Patna',
     category: 'Fashion Show',
+    price: '₹1,200 onwards',
   },
   {
     id: 3,
     title: 'Startup Conclave & Expo',
-    image:
-      'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80',
-    date: 'SAT 11 JUL',
+    image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80',
+    date: 'Sat, 11 Jul, 10:00 AM',
     venue: 'Bapu Sabhagar, Patna',
     category: 'Conference',
+    price: '₹999 onwards',
   },
   {
     id: 4,
     title: 'Sufi Night Live',
-    image:
-      'https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=800&q=80',
-    date: 'SAT 25 JUL',
+    image: 'https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=800&q=80',
+    date: 'Sat, 25 Jul, 7:00 PM',
     venue: 'Energy Park, Patna',
     category: 'Music Concert',
+    price: '₹799 onwards',
   },
   {
     id: 5,
     title: 'Grand Wedding Showcase',
-    image:
-      'https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800&q=80',
-    date: 'SUN 09 AUG',
-    venue: 'Taj Convention, Patna',
+    image: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800&q=80',
+    date: 'Sun, 09 Aug, 11:00 AM',
+    venue: 'Taj Convention Centre, Patna',
     category: 'Wedding & Social',
+    price: 'Free',
+  },
+  {
+    id: 6,
+    title: 'Stand-Up Comedy Night Patna',
+    image: 'https://images.unsplash.com/photo-1585647347483-22b66260dfff?w=800&q=80',
+    date: 'Fri, 06 Jun – Sat, 28 Jun, Multiple slots',
+    venue: 'Palash Lounge, Hotel Patliputra Ashok',
+    category: 'Comedy',
+    price: '₹399 onwards',
+  },
+  {
+    id: 7,
+    title: 'Yoga & Wellness Fest 2026',
+    image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80',
+    date: 'Sun, 21 Jun, 6:30 AM',
+    venue: 'Eco Park, Patna',
+    category: 'Sports & Fitness',
+    price: '₹299 onwards',
+  },
+  {
+    id: 8,
+    title: 'Rock the Stage — Live Concert',
+    image: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800&q=80',
+    date: 'Sat, 19 Jul, 7:00 PM',
+    venue: 'Gyan Bhawan Auditorium, Patna',
+    category: 'Music Concert',
+    price: '₹599 onwards',
+  },
+  {
+    id: 9,
+    title: 'Corporate Brand Activation Summit',
+    image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80',
+    date: 'Fri, 05 Sep, 9:00 AM',
+    venue: 'Hotel Chanakya, Patna',
+    category: 'Conference',
+    price: '₹1,499 onwards',
+  },
+  {
+    id: 10,
+    title: 'Bihar Trade Exhibition 2026',
+    image: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80',
+    date: 'Wed, 12 Aug – Fri, 14 Aug',
+    venue: 'Patna Exhibition Ground, Patna',
+    category: 'Exhibition',
+    price: 'Free',
+  },
+  {
+    id: 11,
+    title: 'Digital Marketing Masterclass',
+    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80',
+    date: 'Sat, 30 Aug, 10:00 AM',
+    venue: 'The LaLiT Hotel, Patna',
+    category: 'Workshop',
+    price: '₹1,999 onwards',
+  },
+  {
+    id: 12,
+    title: 'Kids Talent Championship',
+    image: 'https://images.unsplash.com/photo-1607453998774-d533f65dac99?w=800&q=80',
+    date: 'Sun, 17 Aug, 10:00 AM',
+    venue: 'Maurya Lok Complex, Patna',
+    category: 'Workshop',
+    price: '₹349 onwards',
   },
 ];
 
@@ -285,7 +349,7 @@ export const categories: Category[] = [
 ];
 
 export const navCategories = [
-  { label: 'Events', href: '#home' },
+  { label: 'Events', href: '#events' },
   { label: 'Corporate', href: '#services' },
   { label: 'Weddings', href: '#services' },
   { label: 'Promotions', href: '#services' },

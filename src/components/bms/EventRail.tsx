@@ -48,7 +48,7 @@ export default function EventRail({
             {liveEvents.map((ev) => (
               <a
                 key={ev.id}
-                href={seeAllHref}
+                href="#events"
                 className="group/card shrink-0 w-[280px] sm:w-[320px] bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow"
               >
                 <div className="relative aspect-[16/10] overflow-hidden">

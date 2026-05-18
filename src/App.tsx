@@ -4,6 +4,7 @@ import CategoryNav from './components/bms/CategoryNav';
 import Carousel from './components/bms/Carousel';
 import CardRail from './components/bms/CardRail';
 import EventRail from './components/bms/EventRail';
+import EventsPage from './components/bms/EventsPage';
 import BannerStrip from './components/bms/BannerStrip';
 import PromoBanner from './components/bms/PromoBanner';
 import CategoryStrip from './components/bms/CategoryStrip';
@@ -17,10 +18,13 @@ import Strengths from './components/Strengths';
 import Contact from './components/Contact';
 import { featuredEvents, services } from './components/bms/data';
 
-type View = 'home' | 'about';
+type View = 'home' | 'about' | 'events';
 
 function viewFromHash(): View {
-  return window.location.hash.replace('#', '') === 'about' ? 'about' : 'home';
+  const h = window.location.hash.replace('#', '');
+  if (h === 'about') return 'about';
+  if (h === 'events') return 'events';
+  return 'home';
 }
 
 function App() {
@@ -32,10 +36,10 @@ function App() {
   useEffect(() => {
     const onHashChange = () => {
       const hash = window.location.hash.replace('#', '');
-      const next: View = hash === 'about' ? 'about' : 'home';
+      const next: View = hash === 'about' ? 'about' : hash === 'events' ? 'events' : 'home';
       setView(next);
 
-      if (next === 'about') {
+      if (next === 'about' || next === 'events') {
         window.scrollTo({ top: 0 });
         return;
       }
@@ -63,6 +67,18 @@ function App() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  if (view === 'events') {
+    return (
+      <div className="min-h-screen bg-white">
+        <Header isScrolled={true} />
+        <main>
+          <EventsPage />
+        </main>
+        <SiteFooter />
+      </div>
+    );
+  }
 
   if (view === 'about') {
     return (
@@ -107,7 +123,7 @@ function App() {
         <EventRail
           title="The Best of"
           highlight="Live Events"
-          seeAllHref="#projects"
+          seeAllHref="#events"
         />
 
         {/* Stats / quote promo */}
