@@ -8,7 +8,7 @@ import Accordion from '../components/Accordion.jsx'
 export default function Rules() {
   return (
     <>
-      <PageHero eyebrow="Know before you go" title="Rules &" accent="FAQs" sub="Race policies, regulations and answers to the questions we hear most." ghost="RULES" />
+      <PageHero eyebrow="Know before you go" title="Rules &" accent="FAQs" sub="Race policies, regulations and answers to the questions we hear most." image="/images/start-blocks.jpg" crumb="Rules & FAQ" />
 
       <section className="section container">
         <SectionHead kicker="Race rules" title="Race" accent="regulations" />

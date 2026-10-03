@@ -14,7 +14,7 @@ export default function Athlete() {
 
   return (
     <>
-      <PageHero eyebrow="Race prep" title="Athlete" accent="guide" sub="Everything you need before race day — your gear checklist and free training plans." ghost="PREP" />
+      <PageHero eyebrow="Race prep" title="Athlete" accent="guide" sub="Everything you need before race day — your gear checklist and free training plans." image="/images/lace-up.jpg" crumb="Athlete guide" />
 
       <section className="section container">
         <Note variant="warn" icon="AlertTriangle" title="50K Ultra — mandatory gear, strictly enforced">

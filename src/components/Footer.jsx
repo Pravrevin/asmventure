@@ -7,21 +7,26 @@ import Logo from './Logo.jsx'
 export default function Footer() {
   return (
     <footer className="footer">
-      <div className="container">
-        <div className="footer-cta">
-          <h3 className="display">Your start line<br />is waiting.</h3>
-          <Link to={PATHS.registration} className="btn btn-volt">Claim your bib <ArrowUpRight size={18} /></Link>
+      <section className="footer-cta">
+        <img src="/images/sunset-runner.jpg" alt="" />
+        <div className="footer-cta-shade" />
+        <div className="container footer-cta-inner">
+          <div className="eyebrow">Edition 2027 · Limited slots</div>
+          <h3 className="display">Your start line <em>is waiting.</em></h3>
+          <Link to={PATHS.registration} className="btn btn-volt btn-lg">Claim your bib <ArrowUpRight size={18} /></Link>
         </div>
+      </section>
 
+      <div className="container">
         <div className="footer-grid">
           <div className="footer-brand">
             <Logo light />
-            <p>Patna's community running festival, produced by {BRAND.company}. Every stride powers a greener, fitter Bihar.</p>
+            <p>Patna's premier community running festival, produced by {BRAND.company}. Every stride powers a greener, fitter Bihar.</p>
             <div className="socials">
-              <a href="#" aria-label="Instagram"><Instagram size={18} /></a>
-              <a href="#" aria-label="Facebook"><Facebook size={18} /></a>
-              <a href="#" aria-label="X / Twitter"><Twitter size={18} /></a>
-              <a href="#" aria-label="YouTube"><Youtube size={18} /></a>
+              <a href="#" aria-label="Instagram"><Instagram size={17} /></a>
+              <a href="#" aria-label="Facebook"><Facebook size={17} /></a>
+              <a href="#" aria-label="X / Twitter"><Twitter size={17} /></a>
+              <a href="#" aria-label="YouTube"><Youtube size={17} /></a>
             </div>
           </div>
           <div>
@@ -55,8 +60,14 @@ export default function Footer() {
         </div>
 
         {/* SVG text stretched to the container width so the wordmark always fits */}
-        <svg className="footer-word" viewBox="0 0 1000 96" aria-hidden="true">
-          <text x="0" y="88" textLength="1000" lengthAdjust="spacingAndGlyphs">ASM VENTURES</text>
+        <svg className="footer-word" viewBox="0 0 1000 120" aria-hidden="true">
+          <defs>
+            <linearGradient id="fw" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#F4F1EA" stopOpacity="0.16" />
+              <stop offset="100%" stopColor="#F4F1EA" stopOpacity="0.02" />
+            </linearGradient>
+          </defs>
+          <text x="0" y="104" textLength="1000" lengthAdjust="spacingAndGlyphs" fill="url(#fw)">ASM Ventures</text>
         </svg>
 
         <div className="footer-bottom">

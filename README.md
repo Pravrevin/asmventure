@@ -32,7 +32,7 @@ npm run preview
 - **Content** (races, fees, FAQs, sponsors, posts, contact…): `src/data/site.js`
 - **Data layer**: `src/lib/store.js` — swap the localStorage calls for real API calls when a backend exists
 - **Payment**: `pay()` in `src/pages/Registration.jsx` simulates the gateway — replace with Razorpay etc.
-- **Design tokens** (colours, fonts, radii, dark theme): top of `src/styles.css`
+- **Design tokens** ("Noir & Gold": colours, fonts, radii, light theme): top of `src/styles.css`
 
 ## Admin dashboard
 
@@ -42,3 +42,9 @@ CSV export and a "Load demo data" button for previewing.
 
 > The passcode gate and localStorage data are for a front-end preview only — data is per
 > browser and not secure. Add a backend + real auth before going live.
+
+## Photography
+
+Photos in `public/images/` are from [Unsplash](https://unsplash.com) (free for commercial use under the
+Unsplash License). Replace them with the event's own photography when available — keep the same
+file names and everything updates automatically.

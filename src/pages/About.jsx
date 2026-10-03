@@ -5,7 +5,7 @@ import SectionHead from '../components/SectionHead.jsx'
 export default function About() {
   return (
     <>
-      <PageHero eyebrow="Our story" title="The" accent="movement" sub={`How ${BRAND.company} grew a 500-runner riverside jog into Bihar's biggest community race.`} ghost="STORY" />
+      <PageHero eyebrow="Our story" title="The" accent="movement" sub={`How ${BRAND.company} grew a 500-runner riverside jog into Bihar's biggest community race.`} image="/images/sunrise-runners.jpg" crumb="About" />
 
       <section className="section container about">
         <div>

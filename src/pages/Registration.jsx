@@ -122,7 +122,7 @@ export default function Registration() {
   if (done) {
     return (
       <>
-        <PageHero eyebrow="You're in" title="See you at the" accent="start line" ghost="BIB" />
+        <PageHero eyebrow="You're in" title="See you at the" accent="start line" image="/images/sunrise-runners.jpg" crumb="Registration" />
         <section className="section container">
           <div className="ticket">
             <div className="ticket-main">
@@ -153,7 +153,7 @@ export default function Registration() {
 
   return (
     <>
-      <PageHero eyebrow="Limited slots" title="Claim your" accent="bib" sub="Five quick steps. Early-bird pricing ends 31 January 2027." ghost="REGISTER" />
+      <PageHero eyebrow="Limited slots" title="Claim your" accent="bib" sub="Five quick steps. Early-bird pricing ends 31 January 2027." image="/images/road-stride.jpg" crumb="Register" />
 
       <section className="section container reg">
         <div className="reg-form card">

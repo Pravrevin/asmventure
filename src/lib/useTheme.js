@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
 
-const KEY = 'asm-theme'
+const KEY = 'asm-theme-v2'
 
 export default function useTheme() {
   const [theme, setTheme] = useState(() => {
-    try { return localStorage.getItem(KEY) || 'light' } catch { return 'light' }
+    try { return localStorage.getItem(KEY) || 'dark' } catch { return 'dark' }
   })
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)

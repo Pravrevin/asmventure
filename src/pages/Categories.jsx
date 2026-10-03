@@ -61,7 +61,7 @@ export default function Categories() {
   const line = ELEV.map(([x, y], i) => `${i ? 'L' : 'M'}${x},${y}`).join(' ')
   return (
     <>
-      <PageHero eyebrow="Edition 2027" title="Races &" accent="routes" sub="Distances, flag-off times, course profiles and prize money for all six categories." ghost="RACES" />
+      <PageHero eyebrow="Edition 2027" title="Races &" accent="routes" sub="Distances, flag-off times, course profiles and prize money for all six categories." image="/images/track-aerial.jpg" crumb="Races" />
 
       <section className="section container">
         <SectionHead kicker="Race matrix" title="Compare" accent="distances" sub="All categories are chip-timed on AIMS-certified courses." />
@@ -91,7 +91,9 @@ export default function Categories() {
 
       {/* VIRTUAL */}
       <section className="section container">
-        <div className="virtual card card-ink">
+        <div className="virtual">
+          <img className="virtual-img" src="/images/night-run.jpg" alt="" loading="lazy" />
+          <div className="virtual-shade" />
           <div>
             <div className="kicker">New this edition</div>
             <h2 className="display h2">Can't make it? <span className="u-volt">Run virtual.</span></h2>

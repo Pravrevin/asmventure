@@ -15,7 +15,8 @@ import { CATEGORIES } from '../data/site.js'
 import Logo from '../components/Logo.jsx'
 
 const AUTH_KEY = 'asm_admin_ok'
-const PALETTE = ['#2F3BFF', '#12B886', '#FF5A1F', '#7C5CFF', '#E8487F', '#8DB600', '#0EA5E9', '#F59E0B']
+// matches the category order in data/site.js: 5k, 10k, 21k, 42k, 50k, virtual
+const PALETTE = ['#E58B6D', '#8FA8E0', '#7DC2A5', '#B39DEB', '#D6B06A', '#CFC6B4', '#E5A46D', '#9FB7C9']
 const catColor = (code) => {
   const i = CATEGORIES.findIndex((c) => c.code === code)
   return PALETTE[i < 0 ? 7 : i]
@@ -77,8 +78,9 @@ function Login({ onUnlock }) {
   return (
     <div className="adm-login">
       <div className="adm-login-art">
+        <img src="/images/night-run.jpg" alt="" />
         <Logo light />
-        <h1 className="display">Race<br />control.</h1>
+        <h1 className="display">Race <em>control.</em></h1>
         <p>Registrations, revenue and volunteers for the ASM Ventures Marathon — in one place.</p>
       </div>
       <form className="adm-login-form" onSubmit={submit}>

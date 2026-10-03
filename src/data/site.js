@@ -221,7 +221,7 @@ export const POSTS = [
   {
     slug: 'city-streets-green-miles',
     title: 'From City Streets to Green Miles',
-    tag: 'Community', date: 'Sep 24, 2026', readTime: '4 min read', tone: 'mint',
+    tag: 'Community', date: 'Sep 24, 2026', readTime: '4 min read', tone: 'mint', image: '/images/sunrise-runners.jpg',
     excerpt: 'How every run creates a ripple effect — stronger communities, deeper connections and a shared commitment to a cleaner city.',
     content: [
       'The movement grows one stride at a time. What begins as a personal challenge quickly becomes a shared promise: to run with purpose and leave a lighter footprint.',
@@ -232,7 +232,7 @@ export const POSTS = [
   {
     slug: 'sustainable-race-kits',
     title: 'Why Sustainable Race Kits Matter',
-    tag: 'Sustainability', date: 'Sep 12, 2026', readTime: '5 min read', tone: 'cobalt',
+    tag: 'Sustainability', date: 'Sep 12, 2026', readTime: '5 min read', tone: 'cobalt', image: '/images/lace-up.jpg',
     excerpt: 'The smallest choices — from recycled tees to reusable hydration — can shift an event from wasteful to responsible.',
     content: [
       'Race kits are often treated as giveaways, but they are also a visible statement of an event’s values. Recycled apparel, reusable hydration gear and compostable packaging all say that care for the environment is part of the experience.',
@@ -243,7 +243,7 @@ export const POSTS = [
   {
     slug: 'training-long-run',
     title: 'Training for the Long Run — and the Long View',
-    tag: 'Training', date: 'Aug 30, 2026', readTime: '3 min read', tone: 'flame',
+    tag: 'Training', date: 'Aug 30, 2026', readTime: '3 min read', tone: 'flame', image: '/images/stairs-training.jpg',
     excerpt: 'Great marathon prep is not only about mileage — it is recovery, consistency and building a habit that lasts.',
     content: [
       'Long-distance training builds more than stamina. It builds discipline, patience and resilience — qualities that matter as much on race day as in the weeks before it.',

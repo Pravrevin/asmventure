@@ -1,12 +1,18 @@
-// Inner-page header: eyebrow, oversized title with an accent word, and a ghost word behind it.
-export default function PageHero({ eyebrow, title, accent, sub, ghost }) {
+import { Link } from 'react-router-dom'
+
+// Inner-page banner: full-bleed photo, breadcrumb, title with an italic serif accent.
+export default function PageHero({ eyebrow, title, accent, sub, image = '/images/road-stride.jpg', crumb }) {
   return (
     <header className="page-hero">
-      <div className="container">
-        <span className="ghost-word" aria-hidden="true">{ghost || accent}</span>
-        <div className="eyebrow"><span className="dot" />{eyebrow}</div>
+      <img className="page-hero-img" src={image} alt="" />
+      <div className="page-hero-shade" />
+      <div className="container page-hero-inner">
+        <nav className="crumbs" aria-label="Breadcrumb">
+          <Link to="/">Home</Link><span>/</span><span>{crumb || eyebrow}</span>
+        </nav>
+        <div className="eyebrow">{eyebrow}</div>
         <h1 className="display">
-          {title} {accent && <mark>{accent}</mark>}
+          {title} {accent && <em>{accent}</em>}
         </h1>
         {sub && <p className="lead">{sub}</p>}
       </div>

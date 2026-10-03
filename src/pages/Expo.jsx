@@ -65,7 +65,7 @@ function VolunteerForm() {
 export default function Expo() {
   return (
     <>
-      <PageHero eyebrow="Race week" title="Expo &" accent="contact" sub="Collect your race kit, meet our partners and get in touch with the team." ghost="EXPO" />
+      <PageHero eyebrow="Race week" title="Expo &" accent="contact" sub="Collect your race kit, meet our partners and get in touch with the team." image="/images/stadium-sprint.jpg" crumb="Expo & contact" />
 
       <section className="section container">
         <div className="expo card card-volt">

@@ -4,9 +4,9 @@ export default function SectionHead({ kicker, title, accent, sub, align = 'left'
       <div>
         {kicker && <div className="kicker">{kicker}</div>}
         <h2 className="display h2">
-          {title} {accent && <span className="u-accent">{accent}</span>}
+          {title} {accent && <em className="u-accent">{accent}</em>}
         </h2>
-        {sub && <p className="muted">{sub}</p>}
+        {sub && <p className="muted section-sub">{sub}</p>}
       </div>
       {children}
     </div>
